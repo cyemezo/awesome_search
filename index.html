@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Awesome Search in pure css and jquery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../../card/fonts/font-awesome.min.css">
+</head>
+<body>
+	<div class="search">
+		<input type="search" placeholder="TYPE ANYTHING TO SEARCH" name="">
+		<button class="fa fa-search"></button>
+	</div>
+</body>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script>
+	$('.search button').click(function(){
+		$('.search input').toggleClass('active');
+		$('.search').toggleClass('active');
+		$('.search input').focus();
+	})
+</script>
+</html>
